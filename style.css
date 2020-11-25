@@ -1,0 +1,116 @@
+/* Design a Basic Two Column Website Using HTML and CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgray;
+}
+.wrapper{
+    margin: 0px 100px;
+    /* border: solid 5px; */
+}
+.header{
+    background-color: #ffffff;
+}
+.header>h1{
+    font-family: cursive;
+    font-size: 70px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: royalblue;
+    text-shadow: 2px 2px 4px black;
+}
+.main-nav>ul{
+    background-color: #292929;
+    list-style: none;
+    padding-left: 30px;
+}
+.main-nav>ul>li{
+    display: inline-block;
+    padding: 10px;
+}
+.main-nav>ul>li>a{
+    text-decoration: none;
+    color: blanchedalmond;
+    font-family: cursive;
+    font-size: 16px;
+}
+.main-nav>ul>li:hover{
+    background-color: #111111;
+}
+.main-nav>ul>li>a:hover{
+    color: peachpuff;
+}
+.container {
+    /* border: solid red 5px; */
+    overflow: hidden;
+}
+.content{
+    background-color: #ffffff;
+    min-height: 530px;
+    font-size: 18px;
+    padding: 20px;
+    width: 80%;
+    float: left;
+}
+.content > img{
+        display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+.content>p{
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5px;
+    padding: 5px;
+}
+.right-sidebar{
+    background-color: #ffffff;
+    min-height: 530px;
+    width: 20%;
+    float: right;
+    border-left: solid 1px #b3b3b3;
+}
+.right-sidebar>h1{
+    font-family: cursive;
+    background-color: royalblue;
+    /* border-radius: 0px 25px 0px 0px; */
+    border-top-right-radius: 20px;
+    font-size: 30px;
+    color: seashell;
+    text-align: center;
+    padding: 5px;
+    margin-top: 1px;
+}
+.right-sidebar>p{
+    font-family: cursive;
+    text-align: justify;
+    padding: 10px;
+}
+.footer{
+    background-color: #292929;
+     color: blanchedalmond;
+     padding: 10px;
+}
+.footer>h4{
+   text-align: center;
+    font-family: cursive
+}
+.footer>h4>a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+.footer>h4>a:hover{
+   color: aqua;
+}
+.container::after{
+    content: " ";
+    display: block;
+    clear: both;
+    *zoom: 1;
+}
